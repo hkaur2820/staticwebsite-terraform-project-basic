@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceans in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #73C6B6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            animation: glow 2s linear infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2C3E50;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #FF5733, 0 0 40px #FF5733;
+            }
+        }
+
+        .ocean {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #2C3E50;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .ocean:nth-child(odd) {
+            animation-direction: alternate;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .ocean img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .ocean img:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            margin-top: 20px;
+        }
+
+        .description h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .description p {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Oceans in India</h1>
+    </div>
+    <div class="container">
+        <div class="ocean">
+            <img src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Indian Ocean">
+            <div class="description">
+                <h2>Indian Ocean</h2>
+                <p>The Indian Ocean is the third-largest ocean in the world and covers an area of about 20% of the Earth's total oceanic area.</p>
+            </div>
+        </div>
+        <div class="ocean">
+            <img src="https://images.unsplash.com/photo-1668577684447-c8ebb233f147?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arabian Sea">
+            <div class="description">
+                <h2>Arabian Sea</h2>
+                <p>The Arabian Sea is a region of the northern Indian Ocean bounded on the north by Pakistan and Iran, on the west by the Arabian Peninsula, and on the south by northeastern Somalia and the Arabian Sea region of India.</p>
+            </div>
+        </div>
+        <div class="ocean">
+            <img src="https://images.unsplash.com/photo-1706717601237-79183dfeab85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bay of Bengal">
+            <div class="description">
+                <h2>Bay of Bengal</h2>
+                <p>The Bay of Bengal is the northeastern part of the Indian Ocean, bounded on the west and northwest by India, on the north by Bangladesh, and on the east by Myanmar and the Andaman and Nicobar Islands of India.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
